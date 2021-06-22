@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
+:root {
+    --Primary-color: #343a40;
+    --border-radius: 5px;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    min-height: 100vh;
+    background-color: var(--Primary-color);
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+  }
+
+.event{
+  padding-top: 15px;
+  margin-right: 21rem;
+}
+
+.mvpsale{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: 22rem;
+}
+
+.starcatch{
+    margin-right: 23rem;
+    padding-bottom: 10px;
+}
+
+.safeguard{
+    margin-right: 24.5rem;
+    padding-bottom: 10px;  
+}
+
+
+.itemlevel{
+    padding-bottom: 15px;
+}
+
+.targetstar{
+    padding-bottom: 15px;
+}
+
+.currentstar{
+    padding-bottom: 15px;
+}
+
+.eventdestroy{
+  padding-bottom: 10px;
+  margin-right: 17rem;
+}
+
+
+
+
+

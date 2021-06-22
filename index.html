@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Starforce Simulator</title>
+    <!-- BootStrap Css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <div class="card card-body text-center mt-5">
+                    <h1 class="heading display-5 pb-3">Wonky's Starforce Calculator</h1>
+                    <img src="https://play-lh.googleusercontent.com/1kPpI8qIDT4wI_RlYch-n5W7LesPHYwRDNDgKnkPaZXKfRr16jyAYKUkicmI9f23JqA" class="Maple">
+                    <form onsubmit="calculate(); return false;">
+                        <!-- Event -->
+                        <div class="event">
+                            <label for="event">Event: </label>
+                            <select id="event">
+                                <option value="none">None</option>
+                                <option value="discount">30% Off</option>
+                                <option value="guarantee">5/10/15</option>
+                                <option value="extra">+2 for 1-10</option>
+                            </select>
+                        </div>
+                        <!-- Mvp Sale -->
+                        <div class="mvpsale">
+                            <label for="mvp">MVP: </label>
+                            <select id="mvp">
+                                <option value="none">None</option>
+                                <option value="silver">Silver</option>
+                                <option value="gold">Gold</option>
+                                <option value="diamond">Diamond</option>
+                            </select>
+                        </div>
+                        <!-- Item Level -->
+                        <div class="itemlevel">
+                            <div class="input-group">
+                                <span class="input-group-addon">L</span>
+                                <input type="number" id="level" class="form-control" placeholder="Item Level" required value="160" min="0" max="200">
+                            </div>
+                        </div>
+                        <!-- Current Stars -->
+                        <div class="currentstar">
+                            <div class="input-group">
+                                <span class="input-group-addon">C*</span>
+                                <input type="number" id="from" class = "form-control" placeholder = "Current Star" required value = "17" min="0" max="25">
+                            </div>
+                        </div>
+                        <!-- Target Stars -->
+                        <div class="targetstar">
+                            <div class="input-group">
+                                <span class="input-group-addon">T*</span>
+                                <input type="number" id="to"  class = "form-control" placeholder = "Target Star" required value="22" min="1" max="25">
+                            </div>
+                        </div>
+                        <!-- Event: No Destroy Up to 15 -->
+                        <div class="eventdestroy">
+                            <label for="event-safeguard">Event: No Destroy Up to 15: </label>
+                            <input type="checkbox" id="event-safeguard" value="event-safeguard">
+                        </div>
+                        <!-- Safeguard -->
+                        <div class="safeguard">
+                            <label for="safeguard">Safeguard: </label>
+                            <input type="checkbox" id="safeguard" value="safeguard">
+                        </div>
+                        <!-- StarCatch -->
+                        <div class="starcatch">
+                            <label for="catcher">Star Catching: </label>
+                            <input type="checkbox" id="catcher" value="catcher">
+                        </div>
+                        <input type="submit" value="Calculate" class="btn btn-dark btn-block">
+                    </form>
+                    <!-- Results -->
+                    <div class = "pt-4" id="results">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="array.js"></script>
+</body>
